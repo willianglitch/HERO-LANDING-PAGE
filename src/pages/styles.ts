@@ -31,6 +31,6 @@ export const ColumImage = styled.div`
     position: relative;
 
     img{
-        height: 370px;
+        height: 470px;
     }
 `
