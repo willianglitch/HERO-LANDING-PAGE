@@ -12,26 +12,54 @@ export const Container = styled.div`
     text-align: left;
     padding: 12px;
     border: solid 1px #F8FDFF;
+    overflow: hidden;
 
-    small{
+    small {
         font-size: 14px;
     }
-    div{
+    div {
         display: flex;
         align-items: center;
 
-    }
-    span{
+        span {
         display: block;
         font-weight: lighter;
         font-size: 18px;
         margin-right: 5px;
+    }
+    }
+    i {
+        width: 154px;
+        height: 78px;
+        position: absolute;
 
-        i {
-            vertical-align: middle;
+        border-radius: 50px;
+
+        &.circle1 {
+        background: rgba(255,255,255,0.3);
+        top: -30px;
+        left: 90px;
+        }
+
+        &.circle2 {
+        background: rgba(255,255,255,0.2);
+        bottom: -40px;
+        left: 70px;
+        transform: rotate(45deg);
+        }
+
+        &.circle3 {
+            border: solid 1px rgba(255,255,255,0.5);
+            transform: rotate(-74deg);
+            top: -70px;
+            left: 40px;
         }
     }
-    >div img{
+
+
+    > div img{
         height: 20px;
     }
+    
+
 `
