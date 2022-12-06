@@ -2,12 +2,10 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-    display: flex;
-    flex-direction: row;
+    text-align: right;
+    position: relative;
 
-    > div {
-        width: 50%;
+    img{
+        height: 470px;
     }
-  
 `
- 
