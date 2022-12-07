@@ -15,7 +15,14 @@ export const CardChart = () => {
             </div>
 
             <S.Chart>
-                {amountBars.map((item) => (<div><span></span></div>))}
+                {amountBars.map((item) => (
+                    <>
+                        <div key={String(item)}>
+                            <span></span>
+                        </div>
+                        <small>{item + 1}</small>
+                    </>
+                ))}
             </S.Chart>
 
         </S.Container>

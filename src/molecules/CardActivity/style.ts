@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     position: absolute;
-    top: 90px;
+    top: 10px;
     left: 80px;
     background: #534F46;
     color: #F8FDFF;
@@ -13,6 +13,7 @@ export const Container = styled.div`
     padding: 12px;
     border: solid 1px #F8FDFF;
     overflow: hidden;
+    animation: showOnPageCard 0.8s linear forwards ;
 
     small {
         font-size: 14px;
@@ -54,6 +55,16 @@ export const Container = styled.div`
             top: -70px;
             left: 40px;
         }
+
+        @keyframes showOnPageCard {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+            top: 90px;
+        }
+    }
     }
 
 
